@@ -10,11 +10,14 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  testing:
 
     runs-on: ubuntu-latest
 
     steps:
+    - uses: shivammathur/setup-php@2.31.1
+      with:
+        php-version: '8.2'
     - uses: actions/checkout@v4
 
     - name: Validate composer.json and composer.lock
