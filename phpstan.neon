@@ -6,5 +6,6 @@ parameters:
         - src
     ignoreErrors:
         - '#Function |database_path|response|redirect|session not found.#'
-        - '#Access to an undefined property Vinkas\\Cda\\Client::\$secret#'
-        - '#Call to an undefined static method Vinkas\\Cda\\Client::find|where#'
+        - '#Access to an undefined property Vinkas\\Cda\\Server\\Client::\$secret#'
+        - '#Call to an undefined static method Vinkas\\Cda\\Server\\Client::find|where#'
+        - '#Call to an undefined method Illuminate\\Contracts\\Auth\\Factory::user|guest#'

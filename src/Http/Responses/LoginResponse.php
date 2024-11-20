@@ -1,10 +1,10 @@
 <?php
 
-namespace Vinkas\Cda\Http\Responses;
+namespace Vinkas\Cda\Server\Http\Responses;
 
 use Laravel\Fortify\Contracts\LoginResponse as LoginResponseContract;
 use Laravel\Fortify\Fortify;
-use Vinkas\Cda\Client;
+use Vinkas\Cda\Server\Client;
 
 class LoginResponse implements LoginResponseContract
 {

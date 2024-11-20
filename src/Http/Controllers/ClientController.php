@@ -1,10 +1,10 @@
 <?php
 
-namespace Vinkas\Cda\Http\Controllers;
+namespace Vinkas\Cda\Server\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Vinkas\Cda\Client;
+use Vinkas\Cda\Server\Client;
 
 class ClientController extends Controller {
     public function auth(Request $request, string $key) {
@@ -34,6 +34,6 @@ class ClientController extends Controller {
           return redirect('/login');
         }
 
-        return $client->getRedirectResponse();
+        return $client->redirect();
     }
 }

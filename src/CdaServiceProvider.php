@@ -1,6 +1,6 @@
 <?php
 
-namespace Vinkas\Cda;
+namespace Vinkas\Cda\Server;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
@@ -31,7 +31,7 @@ class CdaServiceProvider extends ServiceProvider
     {
         if (Fortify::$registersRoutes) {
             Route::group([
-                'namespace' => 'Vinkas\Cda\Http\Controllers',
+                'namespace' => 'Vinkas\Cda\Server\Http\Controllers',
                 'domain' => config('fortify.domain', null),
                 'prefix' => config('fortify.prefix'),
             ], function () {

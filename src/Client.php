@@ -1,11 +1,15 @@
 <?php
 
-namespace Vinkas\Cda;
+namespace Vinkas\Cda\Server;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Client extends Model
 {
+    /** @use HasFactory<\Database\Factories\Cda\Server\ClientFactory> */
+    use HasFactory;
+
     protected $table = 'cda_clients';
 
     protected $fillable = [
@@ -80,7 +84,7 @@ class Client extends Model
 
     protected function getResponsePayload()
     {
-        $params =  ['nonce' => $this->getNonceFromPayload()];
+        $params =  [$this->nonce_key => $this->getNonceFromPayload()];
         $params = array_merge($this->getUserParams(), $params);
         return base64_encode(http_build_query($params));
     }

@@ -1,0 +1,29 @@
+providers:
+    - Vinkas\Cda\Server\CdaServiceProvider
+    - Workbench\App\Providers\FortifyServiceProvider
+    - Laravel\Fortify\FortifyServiceProvider
+  # - Workbench\App\Providers\WorkbenchServiceProvider
+
+migrations:
+  - workbench/database/migrations
+
+workbench:
+  start: '/'
+  install: true
+  health: false
+  discovers:
+    web: true
+    api: false
+    commands: false
+    components: false
+    views: true
+  build:
+    - asset-publish
+    - create-sqlite-db
+    - db-wipe
+    - migrate-fresh:
+        --seed: true
+        --seeder: Workbench\Database\Seeders\DatabaseSeeder
+  assets:
+    - laravel-assets
+  sync: []
