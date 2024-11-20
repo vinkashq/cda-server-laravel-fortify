@@ -7,12 +7,12 @@ use Illuminate\Routing\Controller;
 use Vinkas\Cda\Client;
 
 class ClientController extends Controller {
-    public function show(Request $request, string $key) {
+    public function auth(Request $request, string $key) {
         $client = Client::where('key', $key)->first();
         if (!$client) {
             return response()->json(['error' => 'CDA client not found'], 404);
         }
-        
+
         $payload = $request->input('payload');
         $signature = $request->input('signature');
         if (!$payload || !$signature) {
