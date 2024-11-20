@@ -2,7 +2,9 @@
 
 namespace Vinkas\Cda;
 
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Fortify\Fortify;
 
 class CdaServiceProvider extends ServiceProvider
 {
