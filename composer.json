@@ -1,5 +1,5 @@
 {
-    "name": "vinkas/laravel-fortify-cda-server",
+    "name": "vinkas/cda-server-laravel-fortify",
     "description": "Cross-Domain Authentication (CDA) Server for Laravel Fortify",
     "keywords": ["cda", "cross-domain-authentication", "fortify", "laravel", "auth-server"],
     "type": "library",
