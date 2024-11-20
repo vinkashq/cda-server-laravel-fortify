@@ -1,0 +1,24 @@
+{
+    "name": "vinkas/laravel-fortify-cda-server",
+    "description": "Cross-Domain Authentication (CDA) Server for Laravel Fortify",
+    "keywords": ["cda", "cross-domain-authentication", "fortify", "laravel", "auth-server"],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vinkas\\Cda\\Server\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vinoth Kannan",
+            "email": "vinoth.kannan@vinkas.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Vinkas",
+            "homepage": "https://vinkas.com"
+        }
+    ],
+    "require": {}
+}
