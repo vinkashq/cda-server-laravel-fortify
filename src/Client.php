@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Client extends Model
 {
-    /** @use HasFactory<\Database\Factories\Cda\Server\ClientFactory> */
+    /** @use HasFactory<\Database\Factories\Vinkas\Cda\Server\ClientFactory> */
     use HasFactory;
 
     protected $table = 'cda_clients';

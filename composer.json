@@ -13,7 +13,7 @@
     "autoload": {
         "psr-4": {
             "Vinkas\\Cda\\Server\\": "src/",
-            "Database\\Factories\\Cda\\Server\\": "database/factories/"
+            "Database\\Factories\\Vinkas\\Cda\\Server\\": "database/factories/"
         }
     },
     "autoload-dev": {

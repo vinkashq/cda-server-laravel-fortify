@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Factories\Cda\Server;
+namespace Database\Factories\Vinkas\Cda\Server;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Vinkas\Cda\Server\Client;
